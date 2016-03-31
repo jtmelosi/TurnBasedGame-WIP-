@@ -15,8 +15,8 @@ namespace Assets
 
         public int minRange;
         public int maxRange;
-        public int placement;
-        public int affects;
+        public int placement; // 0 = empty, 1 = character, 2 = any, 3 = terrain
+        public int affects; // allies = 0, enemies = 1, all = 2, none = 3
         //public int radius; // probably just implement this in highlight in case you wanna add in a weird shape or something
 
         // single target

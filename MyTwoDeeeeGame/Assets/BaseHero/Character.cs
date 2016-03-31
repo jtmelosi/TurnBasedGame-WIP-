@@ -19,12 +19,17 @@ namespace Assets
         public int stunned;
         public int asleep;
 
+        // here are the stats and abilities objects
         public Active[] actives;
         public Passive[] passives;
         public OnHit[] onHits;
         public CombatStats stats;
         public Info info;
         public StatusEffectSystem statusEffects;
+        public BattleStats battleStats;
+
+        // here are various other objects needed
+        public Tile currentTile;
 
         public Character(Hero hero)
         {
@@ -41,6 +46,7 @@ namespace Assets
             stats = hero.combatStats;
             info = hero.info;
             statusEffects = hero.statusEffects;
+            battleStats = new BattleStats();
         }
 
 

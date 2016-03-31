@@ -19,5 +19,6 @@ namespace Assets
 
         public enum MoveType {walking, swimming, flying, telelporting};
         public MoveType movement;
+        public int moveSpeed;
     }
 }

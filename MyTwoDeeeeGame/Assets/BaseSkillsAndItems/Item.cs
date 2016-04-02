@@ -10,18 +10,19 @@ namespace Assets
     public class Item : MonoBehaviour
     {
         public enum itemType {weapon, armor, shield, accessory};
-
+        
         public itemType type;
         public int quality;
         public string itemName;
         public string description;
+        public int cost;
 
-        public void onEquip()
+        public void onEquip(Hero owner)
         {
 
         }
 
-        public void onRemove()
+        public void onRemove(Hero owner)
         {
 
         }

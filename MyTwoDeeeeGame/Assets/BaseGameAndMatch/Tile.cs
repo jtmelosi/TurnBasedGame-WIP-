@@ -9,9 +9,12 @@ namespace Assets
 {
     public class Tile : MonoBehaviour
     {
+        // 0 = solid object, 1 = normal, 2 = water, 3 = air
+
         // 0 = teleporting, 1 = any, 2 = swimming/flying/teleporting, 3 = flying/teleporting
-        // 0 = not passable, 1 = normal, 2 = water, 3 = air
-        public int constraint;
+        public int moveConstraint;
+        // 0 = none, 1 = any, 2 = swimming/flying, 3 = flying
+        public int endConstraint;
         // character/terrain/destructable that occupies the tile, NULL is an empty tile
         public Character occupant;
         // the buff you get for being on the tile

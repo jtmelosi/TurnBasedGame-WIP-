@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets
 {
     // this is for attack on-hit effects. when implementing one, make sure to put it in the same folder the item/skill is in
     public class OnHit : MonoBehaviour
     {
+        public Character owner;
         // this will proc each time an attack hits
         public void apply(Character target)
         {

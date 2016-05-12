@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets
 {
-    // this is the class that each permanent character's information is held
+    // this is the class that each permanent character's information is held. Use this for out-of-match stuff, and character for in-match stuff
     public class Hero : MonoBehaviour
     {
-        public Active[] actives;
+        public Active[] actives = Active[4]();
         public Passive[] passives;
         public OnHit[] onHits;
+        public OnGetHit[] onGetHits;
         public CombatStats combatStats;
         public Info info;
         public bool owned;

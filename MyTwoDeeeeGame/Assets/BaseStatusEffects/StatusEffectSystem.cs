@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using System;
 using Assets;
 
 public class StatusEffectSystem : MonoBehaviour {
 
 
-    private List<StatusEffect.Buff> buffs = new List<StatusEffect.Buff>();
-    private List<StatusEffect.Debuff> debuffs = new List<StatusEffect.Debuff>();
-    private List<StatusEffect.StatusModifier> statusModifiers = new List<StatusEffect.StatusModifier>();
+    public List<StatusEffect.Buff> buffs = new List<StatusEffect.Buff>();
+    public List<StatusEffect.Debuff> debuffs = new List<StatusEffect.Debuff>();
+    public List<StatusEffect.StatusModifier> statusModifiers = new List<StatusEffect.StatusModifier>();
+
+    // here are the status effect counters
+    public int corrupted;
+    public int invulnerable;
+    public int suppressing;
+    public int immunity;
+    public int unstoppable;
+    public int stunned;
+    public int asleep;
+
 
     public class StatusEffect
     {
@@ -118,10 +126,16 @@ public class StatusEffectSystem : MonoBehaviour {
     }
 
     public StatusEffectSystem() {
+        
+        corrupted = 0;
+        invulnerable = 0;
+        suppressing = 0;
+        immunity = 0;
+        unstoppable = 0;
+        stunned = 0;
+        asleep = 0;
 
-
-
-        }
+    }
 
 
 

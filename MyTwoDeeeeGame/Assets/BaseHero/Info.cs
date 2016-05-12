@@ -17,7 +17,7 @@ namespace Assets
         public int neededExp;
         public int skillPoints;
 
-        public enum MoveType {walking, swimming, flying, telelporting};
+        public enum MoveType {walking, swimming, flying, teleporting};
         public MoveType movement;
         public int moveSpeed;
     }

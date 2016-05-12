@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets
 {
@@ -17,12 +13,14 @@ namespace Assets
         public string description;
         public int cost;
 
+        // what is added when the weapon is equipped
         public void onEquip(Hero owner)
         {
 
         }
 
-        public void onRemove(Hero owner)
+        // what is removed when the weapon is unequipped
+        public void onUnequip(Hero owner)
         {
 
         }

@@ -1,22 +1,24 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Assets
 {
     // base class for active skills, implement specifics for them in their own active class inside of a Hero's folder
     public class Active : MonoBehaviour
     {
+        public enum Affects {allies, enemies, character, tile, terrain, empty};
+        public enum Placement {empty, character, any, terrain, allies, enemies }
+
         public string skillName;
         public string description;
         public int level;
+        public Character owner;
 
         public int minRange;
         public int maxRange;
-        public int placement; // 0 = empty, 1 = character, 2 = any, 3 = terrain
-        public int affects; // allies = 0, enemies = 1, all = 2, none = 3
+        public List<Placement> placement;
+        public List<Affects> affects;
+        public Tile[] affectedTiles;
         //public int radius; // probably just implement this in highlight in case you wanna add in a weird shape or something
 
         // single target

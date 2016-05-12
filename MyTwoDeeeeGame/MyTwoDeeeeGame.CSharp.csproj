@@ -69,10 +69,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BaseGameAndMatch\Map.cs" />
-    <Compile Include="Assets\BaseGameAndMatch\Match.cs" />
-    <Compile Include="Assets\BaseGameAndMatch\Playthrough.cs" />
-    <Compile Include="Assets\BaseGameAndMatch\Tile.cs" />
+    <Compile Include="Assets\BaseGame\BaseMatch\Map.cs" />
+    <Compile Include="Assets\BaseGame\BaseMatch\Match.cs" />
+    <Compile Include="Assets\BaseGame\BaseMatch\Tile.cs" />
+    <Compile Include="Assets\BaseGame\Playthrough.cs" />
     <Compile Include="Assets\BaseHero\BattleStats.cs" />
     <Compile Include="Assets\BaseHero\Character.cs" />
     <Compile Include="Assets\BaseHero\CombatStats.cs" />
@@ -80,6 +80,7 @@
     <Compile Include="Assets\BaseHero\Info.cs" />
     <Compile Include="Assets\BaseSkillsAndItems\Active.cs" />
     <Compile Include="Assets\BaseSkillsAndItems\Item.cs" />
+    <Compile Include="Assets\BaseSkillsAndItems\OnGetHit.cs" />
     <Compile Include="Assets\BaseSkillsAndItems\OnHit.cs" />
     <Compile Include="Assets\BaseSkillsAndItems\Passive.cs" />
     <Compile Include="Assets\BaseStatusEffects\Buff.cs" />
@@ -87,7 +88,14 @@
     <Compile Include="Assets\BaseStatusEffects\StatusEffect.cs" />
     <Compile Include="Assets\BaseStatusEffects\StatusEffectSystem.cs" />
     <Compile Include="Assets\BaseStatusEffects\StatusModifier.cs" />
-    <Compile Include="Assets\Heroes\Bladedancer\Bladedancer.cs" />
+    <Compile Include="Assets\CreatedHeroes\Bladedancer\Bladedancer.cs" />
+    <Compile Include="Assets\CreatedHeroes\_ExampleHero\Active1.cs" />
+    <Compile Include="Assets\CreatedHeroes\_ExampleHero\ExampleHero.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\CreatedHeroes\__Readme\HeroReadme.txt" />
+    <None Include="Assets\CreatedMaps\__Readme\MapReadme.txt" />
+    <None Include="Assets\CreatedMatches\__Readme\MatchReadme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

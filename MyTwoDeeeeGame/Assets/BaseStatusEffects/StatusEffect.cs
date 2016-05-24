@@ -73,31 +73,31 @@ namespace Assets
             // updates amounts if the effect is of a certain type
             if (identifiers.Contains(SEIdentifier.Corrupted))
             {
-                owner.corrupted += amountToChange;
+                owner.statusEffects.corrupted += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Immunity))
             {
-                owner.immunity += amountToChange;
+                owner.statusEffects.immunity += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Invulnerable))
             {
-                owner.invulnerable += amountToChange;
+                owner.statusEffects.invulnerable += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Suppressing))
             {
-                owner.suppressing += amountToChange;
+                owner.statusEffects.suppressing += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Unstoppable))
             {
-                owner.unstoppable += amountToChange;
+                owner.statusEffects.unstoppable += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Stunned))
             {
-                owner.stunned += amountToChange;
+                owner.statusEffects.stunned += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Asleep))
             {
-                owner.asleep += amountToChange;
+                owner.statusEffects.asleep += amountToChange;
             }
         }
 

@@ -16,13 +16,14 @@ namespace Assets
         public int healthRegen;
         public int lifeSteal; // phys lifesteal
         public int soulSteal; // mag lifesteal
-        public int essenceLeach; // steal enemy's resource = % of their max health damage dealt to them
+        public int essenceLeach; // turn enemy's health into resource = % of their max health damage dealt to them as % of own max resource
 
         public int critChance;
         public int critDamage;
         public int physPen;
         public int magicPen;
         public int doubleStrike; // % chance to hit 2 times with an attack
+        public int accuracy;
 
         public int physDef;
         public int magicDef;

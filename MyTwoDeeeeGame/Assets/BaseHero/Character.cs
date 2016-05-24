@@ -17,6 +17,8 @@ namespace Assets
         public StatusEffectSystem statusEffects;
         public BattleStats battleStats;
 
+        public Character[] team;
+
         // here are various other objects needed
         public Tile currentTile;
 

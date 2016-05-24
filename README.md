@@ -17,7 +17,11 @@ This README would normally document whatever steps are necessary to get your app
 * How to run tests
 * Deployment instructions
 
-### Contribution guidelines ###
+### Contribution guidelines ###FUC K U JKAHAVA I DO WHAT I WA NT 
+
+
+
+[EMOS PENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENIS
 
 * Writing tests
 * Code review

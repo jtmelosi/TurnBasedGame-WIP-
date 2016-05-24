@@ -45,7 +45,8 @@ public class StatusEffectSystem : MonoBehaviour {
         public int endTurn;
         public int duration;
 
-        private List<SEIdentifier> identifiers;
+        public List<SEIdentifier> identifiers;
+        public bool suppressed;
         Character owner;
         Character source;
 
@@ -53,7 +54,7 @@ public class StatusEffectSystem : MonoBehaviour {
         {
             endTurn = Match.turn + duration;
             identifiers = new List<SEIdentifier>();
-
+            suppressed = false;
 
         }
 
@@ -89,23 +90,23 @@ public class StatusEffectSystem : MonoBehaviour {
             }
             if (identifiers.Contains(SEIdentifier.Corrupted))
             {
-                owner.corrupted += amountToChange;
+                owner.statusEffects.corrupted += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Immunity))
             {
-                owner.immunity += amountToChange;
+                owner.statusEffects.immunity += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Invulnerable))
             {
-                owner.invulnerable += amountToChange;
+                owner.statusEffects.invulnerable += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Suppressing))
             {
-                owner.suppressing += amountToChange;
+                owner.statusEffects.suppressing += amountToChange;
             }
             if (identifiers.Contains(SEIdentifier.Unstoppable))
             {
-                owner.unstoppable += amountToChange;
+                owner.statusEffects.unstoppable += amountToChange;
             }
         }
 

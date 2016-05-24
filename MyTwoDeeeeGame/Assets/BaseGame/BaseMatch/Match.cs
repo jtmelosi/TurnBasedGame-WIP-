@@ -20,7 +20,13 @@ namespace Assets
         public static List<Character> teamFour = new List<Character>();
 
         // win conditions at some point
-
+        /*
+        Possible game modes:
+        CTF
+        Deathmatch
+        Wave Survival
+        Base Destruction
+        */
 
     }
 }

@@ -7,7 +7,7 @@ namespace Assets
     public class Active : MonoBehaviour
     {
         public enum Affects {allies, enemies, character, tile, terrain, empty};
-        public enum Placement {empty, character, any, terrain, allies, enemies }
+        public enum Placement {empty, character, any, terrain, allies, enemies };
 
         public string skillName;
         public string description;
